@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<html>
+<head><meta charset="utf-8" />
 
-<title>fej05</title>
+<title>fej09</title>
 
-<script src="fej05_elemei/require.js"></script>
-<script src="fej05_elemei/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 
@@ -13085,13 +13085,13 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="fej05_elemei/custom.css">
+<link rel="stylesheet" href="custom.css">
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="fej05_elemei/MathJax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config;executed=true">
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -13108,149 +13108,36 @@ div#notebook {
         }
     });
     </script>
-    <!-- End of mathjax configuration --><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
-</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 1px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: .7em}
-.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: #606872; color: white}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
-</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
-</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
-</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-</style><style type="text/css">.MathJax_Preview {color: #888}
-#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
-</style><style type="text/css">.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style><style type="text/css">.MathJax_Display {text-align: center; margin: 0; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
-.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MathJax .MJX-monospace {font-family: monospace}
-.MathJax .MJX-sans-serif {font-family: sans-serif}
-#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
-.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
-.MathJax:focus, body :focus .MathJax {display: inline-table}
-.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
-.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
-img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
-.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
-.MathJax nobr {white-space: nowrap!important}
-.MathJax img {display: inline!important; float: none!important}
-.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
-.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
-.MathJax_Processed {display: none!important}
-.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
-.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
-.MathJax_LineBox {display: table!important}
-.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
-.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
-.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
-#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
-@font-face {font-family: MathJax_Blank; src: url('about:blank')}
-.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style></head>
-<body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px none; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+    <!-- End of mathjax configuration --></head>
+<body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Elágazások,-rekurzió">Elágazások, rekurzió<a class="anchor-link" href="#Elágazások,-rekurzió">¶</a></h1><p>A fejezet egyik fő témája az <code>if</code> utasítás, mely a program aktuális változóinak értékétől - állapotától - függően más-más kódokat futtathat. <br>
-Bevezetőnek ismerkedjünk meg két új függvénnyel:</p>
-<h2 id="Kerekítéses-osztás-és-maradék">Kerekítéses osztás és maradék<a class="anchor-link" href="#Kerekítéses-osztás-és-maradék">¶</a></h2><p>A <code>÷</code> operátor elosztja az első operandust a másodikkal és veszi az eredmény egész részét:</p>
+<h1 id="J&#225;t&#233;k-sztringekkel">J&#225;t&#233;k sztringekkel<a class="anchor-link" href="#J&#225;t&#233;k-sztringekkel">&#182;</a></h1><p>Szavakkal kapcsolatos feladatokat fogunk megoldani. <br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="F&#225;jlok-olvas&#225;sa">F&#225;jlok olvas&#225;sa<a class="anchor-link" href="#F&#225;jlok-olvas&#225;sa">&#182;</a></h3><p>Töltsük le a <a href="https://github.com/BenLauwens/ThinkJulia.jl/blob/master/data/words.txt">szavak</a> állományt.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[183]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">időtartam</span> <span class="o">=</span> <span class="mi">105</span> <span class="c"># percekben</span>
-<span class="n">órák</span><span class="o">=</span><span class="n">időtartam</span> <span class="o">÷</span> <span class="mi">60</span> 
-<span class="n">println</span><span class="p">(</span><span class="s">"</span><span class="si">$</span><span class="p">(</span><span class="n">időtartam</span><span class="p">)</span><span class="s"> perc = </span><span class="si">$</span><span class="p">(</span><span class="n">órák</span><span class="p">)</span><span class="s"> óra és </span><span class="si">$</span><span class="p">(</span><span class="n">percek</span><span class="p">)</span><span class="s"> perc"</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="n">wf</span><span class="o">=</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;words.txt&quot;</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">readline</span><span class="p">(</span><span class="n">wf</span><span class="p">))</span>
+<span class="n">println</span><span class="p">(</span><span class="n">readline</span><span class="p">(</span><span class="n">wf</span><span class="p">))</span>
+<span class="n">close</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13267,42 +13154,8 @@ Bevezetőnek ismerkedjünk meg két új függvénnyel:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>105 perc = 1 óra és 45 perc
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">percek</span><span class="o">=</span><span class="n">időtartam</span> <span class="o">%</span> <span class="mi">60</span>
-<span class="n">println</span><span class="p">(</span><span class="s">"</span><span class="si">$</span><span class="p">(</span><span class="n">időtartam</span><span class="p">)</span><span class="s"> perc = </span><span class="si">$</span><span class="p">(</span><span class="n">órák</span><span class="p">)</span><span class="s"> óra és </span><span class="si">$</span><span class="p">(</span><span class="n">percek</span><span class="p">)</span><span class="s"> perc"</span><span class="p">)</span>
-<span class="n">órák</span><span class="p">,</span><span class="n">percek</span><span class="o">=</span><span class="n">divrem</span><span class="p">(</span><span class="n">időtartam</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="s">"</span><span class="si">$</span><span class="p">(</span><span class="n">időtartam</span><span class="p">)</span><span class="s"> perc  = </span><span class="si">$</span><span class="p">(</span><span class="n">órák</span><span class="p">)</span><span class="s"> óra és </span><span class="si">$</span><span class="p">(</span><span class="n">percek</span><span class="p">)</span><span class="s"> perc"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>105 perc = 1 óra és 45 perc
-105 perc  = 1 óra és 45 perc
+<pre>aa
+aah
 </pre>
 </div>
 </div>
@@ -13314,21 +13167,36 @@ Bevezetőnek ismerkedjünk meg két új függvénnyel:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A <code>%</code> operátorral eldönthetjük, hogy egy szám osztója-e 
-egy másiknak vagy megtudhatjuk egy szám utolsó néhány jegyét - 
-egyszerűen kérdezzük meg a maradékát <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 1.301em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.974em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.661em, 1000.93em, 2.674em, -1000em); top: -2.489em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mn" id="MathJax-Span-3" style="font-family: MathJax_Main;">10</span></span><span style="display: inline-block; width: 0px; height: 2.489em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.1em; border-left: 0px solid; width: 0px; height: 1.051em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-1">10</script> bizonyos hatványára nézve (ha a tízes rendszerbeli jegyeire vagyunk kíváncsiak).</p>
-
+<p>Azaz</p>
+<ol>
+<li>Megnyitjuk az állományt: <code>open</code> (feltételezzük, hogy létezik a fájl)</li>
+<li>Sorokat olvasunk belőle: <code>readline</code></li>
+<li>Csinálunk valamit az olvasott adatokkal...</li>
+<li>Bezárjuk az állományt.</li>
+</ol>
+<h3 id="Feladat">Feladat<a class="anchor-link" href="#Feladat">&#182;</a></h3><p>Számoljuk meg a legalább $h$ hosszú szavakat és adjuk meg százalékos arányukat.</p>
+<h3 id="Megold&#225;s">Megold&#225;s<a class="anchor-link" href="#Megold&#225;s">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[197]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="mi">121</span><span class="o">%</span><span class="mi">11</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="mi">13</span><span class="o">%</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="mi">123123</span><span class="o">%</span><span class="mi">100</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">számol</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">irjam</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+  <span class="n">wf</span><span class="o">=</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;words.txt&quot;</span><span class="p">)</span>
+  <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+  <span class="k">for</span> <span class="n">sor</span> <span class="kp">in</span> <span class="n">eachline</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>
+    <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="n">m</span><span class="o">+=</span><span class="k">if</span> <span class="n">length</span><span class="p">(</span><span class="n">sor</span><span class="p">)</span><span class="o">&gt;=</span><span class="n">h</span> <span class="n">irjam</span><span class="o">&amp;&amp;</span><span class="n">println</span><span class="p">(</span><span class="n">sor</span><span class="p">);</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="n">close</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>  
+  <span class="n">m</span><span class="p">,</span><span class="n">n</span>
+<span class="k">end</span>
+<span class="n">h</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">számol</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;a szavak </span><span class="si">$</span><span class="p">(</span><span class="n">m</span><span class="o">*</span><span class="mf">100.0</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="s"> százaléka hosszabb mint </span><span class="si">$</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="s">&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13345,9 +13213,15 @@ egyszerűen kérdezzük meg a maradékát <span class="MathJax_Preview" style="c
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0
-3
-23
+<pre>counterdemonstration
+counterdemonstrations
+counterdemonstrators
+hyperaggressivenesses
+hypersensitivenesses
+microminiaturization
+microminiaturizations
+representativenesses
+a szavak 0.0070293210554525564 százaléka hosszabb mint 19
 </pre>
 </div>
 </div>
@@ -13359,49 +13233,32 @@ egyszerűen kérdezzük meg a maradékát <span class="MathJax_Preview" style="c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Logikai-kifejezések">Logikai kifejezések<a class="anchor-link" href="#Logikai-kifejezések">¶</a></h2><p>A logikai kifejezés olyan kifejezés, mely vagy igaz-ra vagy hamis-ra értékelődik ki futás során. A <code>Julia</code>-ban a logikai értékek:
-<code>true</code> és <code>false</code>, melyek a <code>Bool</code> 
-típust alkotják. Logikai kifejezéseket olyan operátorokkal hozunk létre 
-melyek maguk is logikai értéket adnak. A leggyakrabban használtak az 
-összehasonlító operátorok a teljesség igénye nélkül:</p>
-<table>
-<thead><tr>
-<th>jel</th>
-<th>értelme</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>==</code></td>
-<td>egyenlőek?</td>
-</tr>
-<tr>
-<td><code>&lt;</code></td>
-<td>kisebb?</td>
-</tr>
-<tr>
-<td><code>&lt;=</code></td>
-<td>kisebb vagy egyenlö?</td>
-</tr>
-<tr>
-<td><code>!=</code></td>
-<td>nem egyenlö?</td>
-</tr>
-</tbody>
-</table>
-
+<h3 id="Feladat">Feladat<a class="anchor-link" href="#Feladat">&#182;</a></h3><p>Számoljuk meg a legalább $h$ hosszú szavakat melyek egy adott karaktert nem tartalmaznak és adjuk meg százalékos arányukat.</p>
+<h3 id="Megold&#225;s">Megold&#225;s<a class="anchor-link" href="#Megold&#225;s">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[203]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="mi">5</span><span class="o">==</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="mi">5</span><span class="o">&lt;=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="mi">5</span><span class="o">&lt;</span><span class="mi">15</span><span class="p">)</span>
-<span class="n">typeof</span><span class="p">(</span><span class="mi">5</span><span class="o">==</span><span class="mi">6</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">számol</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">irjam</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+  <span class="n">wf</span><span class="o">=</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;words.txt&quot;</span><span class="p">)</span>
+  <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+  <span class="k">for</span> <span class="n">sor</span> <span class="kp">in</span> <span class="n">eachline</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>
+    <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">length</span><span class="p">(</span><span class="n">sor</span><span class="p">)</span> <span class="o">≥</span> <span class="n">h</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">∉</span> <span class="n">sor</span>
+      <span class="n">m</span><span class="o">+=</span><span class="mi">1</span>
+      <span class="n">irjam</span> <span class="o">&amp;&amp;</span> <span class="n">println</span><span class="p">(</span><span class="n">sor</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="n">close</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>  
+  <span class="n">m</span><span class="p">,</span><span class="n">n</span>
+<span class="k">end</span>
+<span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span><span class="sc">&#39;e&#39;</span>
+<span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">számol</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;a szavak </span><span class="si">$</span><span class="p">(</span><span class="n">m</span><span class="o">*</span><span class="mf">100.0</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="s"> százaléka hosszabb mint </span><span class="si">$</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="s"> és nincs benne &#39;</span><span class="si">$</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="s">&#39;&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13418,22 +13275,55 @@ melyek maguk is logikai értéket adnak. A leggyakrabban használtak az
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>true
-true
-true
+<pre>a szavak 0.6792081469831033 százaléka hosszabb mint 12 és nincs benne &#39;e&#39;
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Feladat">Feladat<a class="anchor-link" href="#Feladat">&#182;</a></h3><p>Írjunk egy függvényt mely egy adott sztringről eldönti hogy tartalmaz-e bizonyos tiltott karaktereket.<br>
+Azaz: <code>S</code> és <code>T</code> karaktereit egy-egy halmaznak (egy elem csak 1x szerepel) tekintve, döntsük el hogy 
+<code>S</code>$\cup$ <code>T</code> $=\emptyset$ vagy sem</p>
+<h3 id="Megold&#225;s">Megold&#225;s<a class="anchor-link" href="#Megold&#225;s">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[214]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">vanKözös</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">c</span> <span class="o">∈</span> <span class="n">a</span> 
+    <span class="k">if</span> <span class="n">c</span> <span class="o">∈</span> <span class="n">b</span> <span class="k">return</span> <span class="kc">true</span> <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="kc">false</span>
+<span class="k">end</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[214]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Bool</pre>
+<pre>vanKözös (generic function with 1 method)</pre>
 </div>
 
 </div>
@@ -13445,233 +13335,33 @@ true
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ha valaki a megszokott jelölésekhez ragaszkodik:</p>
+<h3 id="Feladat">Feladat<a class="anchor-link" href="#Feladat">&#182;</a></h3><p>Írjunk egy függvényt mely egy adott <code>S</code> sztring esetén csak azokat a szavakat számolja, melyeknek nincs közös karaktere <code>S</code>-el.</p>
+<h3 id="Megold&#225;s">Megold&#225;s<a class="anchor-link" href="#Megold&#225;s">&#182;</a></h3><p>Használjuk a <code>vanKözös</code> fv-t.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[215]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="mi">3</span> <span class="o">≥</span> <span class="mi">1</span><span class="p">)</span> <span class="c"># \ge + TAB</span>
-<span class="n">println</span><span class="p">(</span><span class="mi">3</span> <span class="o">≠</span> <span class="mi">1</span><span class="p">)</span> <span class="c"># # \ne + TAB</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>true
-true
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Figyeljünk oda: az <code>==</code> és a <code>=</code> teljesen más!</p>
-<h2 id="Logikai-operátorok">Logikai operátorok<a class="anchor-link" href="#Logikai-operátorok">¶</a></h2><table>
-<thead><tr>
-<th>jel</th>
-<th>olvasása</th>
-<th>működése</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&amp;&amp;</code></td>
-<td>és</td>
-<td>csak akkor igaz, ha mindkét operandus az</td>
-</tr>
-<tr>
-<td><code>||</code></td>
-<td>vagy</td>
-<td>csak akkor hamis, ha mindkét operandus az</td>
-</tr>
-<tr>
-<td><code>!</code></td>
-<td>nem</td>
-<td>csak akkor igaz ha az operandus nem az</td>
-</tr>
-</tbody>
-</table>
-<p>Segítségükkel egyszerűbb logikai kifejezéseket összekapcsolhatunk:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">println</span><span class="p">(</span><span class="mi">1</span><span class="o">==</span><span class="mi">1</span> <span class="o">||</span> <span class="mi">1</span><span class="o">==</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="mi">1</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">println</span><span class="p">((</span><span class="mi">1</span><span class="o">==</span><span class="mi">0</span> <span class="o">||</span> <span class="mi">1</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="mi">1</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="mi">1</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="o">||</span> <span class="mi">1</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">println</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="mi">1</span><span class="o">==</span><span class="mi">0</span> <span class="o">||</span> <span class="mi">1</span><span class="o">==</span><span class="mi">1</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>true
-false
-true
-false
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Az példa mutatja, hogy az <code>||</code>&lt;<code>&amp;&amp;</code>&lt;<code>!</code> a precedenciák sorrendje.</p>
-<h2 id="Feltételes-végrehajtás">Feltételes végrehajtás<a class="anchor-link" href="#Feltételes-végrehajtás">¶</a></h2><p>Ha használható programokat akarunk írni szükség lehet megváltoztatni a program működését a körülményeknek megfelelően. 
-A feltételes utasítás - <code>if...end</code> - ezt teszi lehetővé:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"a "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" páros"</span><span class="p">)</span>
-<span class="k">end</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>a 4 páros
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A működése: ha az <code>if</code> utáni logikai kifejezés, a <strong>feltétel</strong> <code>igaz</code> akkor 
-végrehajtódik a kijelölt tevékenység. Ha nem akkor (itt) nem történik semmi.</p>
-<h2 id="Alternatív-végrehajtás">Alternatív végrehajtás<a class="anchor-link" href="#Alternatív-végrehajtás">¶</a></h2><p>Fent nem kezeltük le azt az esetet amikor <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-4" style="width: 0.814em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.885em, 1000.55em, 2.663em, -1000em); top: -2.489em; left: 0em;"><span class="mrow" id="MathJax-Span-5"><span class="mi" id="MathJax-Span-6" style="font-family: MathJax_Math; font-style: italic;">x</span></span><span style="display: inline-block; width: 0px; height: 2.489em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.086em; border-left: 0px solid; width: 0px; height: 0.741em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">x</script> páratlan, ezt is 
-lekezelhetjük az <code>if...else...end</code> szerkezettel:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span>
-  <span class="n">println</span><span class="p">(</span><span class="s">"a "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" páros"</span><span class="p">)</span>
-<span class="k">else</span>
-  <span class="n">println</span><span class="p">(</span><span class="s">"a "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" páratlan"</span><span class="p">)</span>
-<span class="k">end</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>a 3 páratlan
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Láncolt-elágazás">Láncolt elágazás<a class="anchor-link" href="#Láncolt-elágazás">¶</a></h2><p>Ha több alternatíva van, hasznos az <code>if...elseif...else...end</code> szerkezet:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">4</span><span class="o">==</span><span class="mi">0</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"a(z) "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" néggyel osztható"</span><span class="p">)</span>
-  <span class="k">elseif</span> <span class="n">x</span><span class="o">%</span><span class="mi">4</span><span class="o">==</span><span class="mi">1</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"a(z) "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" néggyel 1 maradékot ad"</span><span class="p">)</span>
-  <span class="k">elseif</span> <span class="n">x</span><span class="o">%</span><span class="mi">4</span><span class="o">==</span><span class="mi">2</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"a(z) "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" néggyel 2 maradékot ad"</span><span class="p">)</span>
-  <span class="k">elseif</span> <span class="n">x</span><span class="o">%</span><span class="mi">4</span><span class="o">==</span><span class="mi">3</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"a(z) "</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s">" néggyel 3 maradékot ad"</span><span class="p">)</span>
-  <span class="k">else</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"a maradékos osztáshoz egész szám kell!"</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">számol</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">irjam</span><span class="o">=</span><span class="kc">false</span><span class="p">)</span>
+  <span class="n">wf</span><span class="o">=</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;words.txt&quot;</span><span class="p">)</span>
+  <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+  <span class="k">for</span> <span class="n">sor</span> <span class="kp">in</span> <span class="n">eachline</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>
+    <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="kc">false</span><span class="o">==</span><span class="n">vanKözös</span><span class="p">(</span><span class="n">sor</span><span class="p">,</span> <span class="n">S</span><span class="p">)</span>
+      <span class="n">m</span><span class="o">+=</span><span class="mi">1</span>
+      <span class="n">irjam</span> <span class="o">&amp;&amp;</span> <span class="n">println</span><span class="p">(</span><span class="n">sor</span><span class="p">)</span>
+    <span class="k">end</span>
   <span class="k">end</span>
+  <span class="n">close</span><span class="p">(</span><span class="n">wf</span><span class="p">)</span>  
+  <span class="n">m</span><span class="p">,</span><span class="n">n</span>
 <span class="k">end</span>
-<span class="n">foo</span><span class="o">.</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mf">4.1</span><span class="p">]);</span> <span class="c"># broadcasting, lebegőpontos lesz a teljes vektor!</span>
+<span class="n">S</span><span class="o">=</span><span class="s">&quot;aouei&quot;</span>
+<span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">számol</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="n">m</span><span class="o">*</span><span class="mf">100.0</span><span class="o">/</span><span class="n">n</span><span class="p">,</span><span class="s">&quot; százalék&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13688,11 +13378,7 @@ lekezelhetjük az <code>if...else...end</code> szerkezettel:</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a(z) 1.0 néggyel 1 maradékot ad
-a(z) 2.0 néggyel 2 maradékot ad
-a(z) 3.0 néggyel 3 maradékot ad
-a(z) 4.0 néggyel osztható
-a maradékos osztáshoz egész szám kell!
+<pre>0.09401716911667794 százalék
 </pre>
 </div>
 </div>
@@ -13704,35 +13390,26 @@ a maradékos osztáshoz egész szám kell!
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Láthatjuk, hogy nincs határ <code>elseif</code> ágak számára. A logikai kifejezések sorban kiértékelődnek, és<br> 
-ha <code>false</code>-ot kapunk, megy a kiértékelés a további ágakra, amíg el nem fogynak.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Egymásba-ágyazás">Egymásba ágyazás<a class="anchor-link" href="#Egymásba-ágyazás">¶</a></h2><p>Az <code>if</code> egymásba is ágyazhatóak. Jól gondoljuk meg a használatát, mert ha <br>
-tartjuk magunkat valamilyen behúzási rendhez, könnyen elgogyhat a képernyőnk szélessége.</p>
+<h3 id="Feladat">Feladat<a class="anchor-link" href="#Feladat">&#182;</a></h3><p>Írjunk egy függvényt mely egy adott <code>S</code> sztring esetén eldönti hogy felépíthető-e csak egy adott <code>T</code> 
+sztring karaktereinek (esetleg többszöri) felhasználásával.<br>
+Azaz: <code>S</code> és <code>T</code> karaktereit egy-egy halmaznak (egy elem csak 1x szerepel) tekintve, döntsük el hogy 
+<code>S</code>$\subseteq$ <code>T</code> fennáll vagy sem.</p>
+<h3 id="Megold&#225;s">Megold&#225;s<a class="anchor-link" href="#Megold&#225;s">&#182;</a></h3><p>Vegyük észre, hogy ha a sztringre mint többszörös elemeket is tartalmazó halmazra gondolunk, akkor éppen a 
+részhalmaz relációt kell megvalósítani.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[216]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span>
-<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"x and y are equal"</span><span class="p">)</span>
-<span class="k">else</span>
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>
-        <span class="n">println</span><span class="p">(</span><span class="s">"x is less than y"</span><span class="p">)</span>
-    <span class="k">else</span>
-        <span class="n">println</span><span class="p">(</span><span class="s">"x is greater than y"</span><span class="p">)</span>
-    <span class="k">end</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">része</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">c</span> <span class="o">∈</span> <span class="n">a</span> 
+    <span class="k">if</span> <span class="n">c</span> <span class="o">∉</span> <span class="n">b</span> <span class="k">return</span> <span class="kc">false</span> <span class="k">end</span>
+  <span class="k">end</span>
+  <span class="kc">true</span>
 <span class="k">end</span>
 </pre></div>
 
@@ -13746,372 +13423,26 @@ tartjuk magunkat valamilyen behúzási rendhez, könnyen elgogyhat a képernyőn
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[216]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>x is less than y
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ráadásul az alábbi esetben, még csúnyább is a kód:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">x</span>
-    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span>
-        <span class="n">println</span><span class="p">(</span><span class="s">"x is a positive single-digit number."</span><span class="p">)</span>
-    <span class="k">end</span>
-<span class="k">end</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>x is a positive single-digit number.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Mintha az alábbit használnánk:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span>
-    <span class="n">println</span><span class="p">(</span><span class="s">"x is a positive single-digit number."</span><span class="p">)</span>
-<span class="k">end</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>x is a positive single-digit number.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="c">## Rekurzió</span>
-
-<span class="n">A</span> <span class="n">függvények</span> <span class="n">kölcsönösen</span> <span class="n">hívhatják</span> <span class="n">egymást</span><span class="p">,</span> <span class="n">sőt</span> <span class="n">önmagukat</span> <span class="n">is</span><span class="o">.</span> <span class="n">Ez</span> <span class="n">elsőre</span> <span class="n">furcsának</span> <span class="n">tűnhet</span><span class="p">,</span> <span class="n">de</span> <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">meglátjuk</span><span class="p">,</span> <span class="n">hogy</span> <span class="n">hasznos</span> <span class="n">dolog</span><span class="o">.</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>syntax: extra token "függvények" after end of expression
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">visszaSzámol</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">≤</span> <span class="mi">0</span>
-        <span class="n">println</span><span class="p">(</span><span class="s">"Bumm!"</span><span class="p">)</span>
-    <span class="k">else</span>
-        <span class="n">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s">" "</span><span class="p">)</span>
-        <span class="n">visszaSzámol</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-    <span class="k">end</span>
-<span class="k">end</span>
-<span class="n">visszaSzámol</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>5 4 3 2 1 Bumm!
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Az ilyen típusú hívások láncolata kényelmesen megjeleníthető egy fa segítségével.<br>
-Következő példával egy sztringet íratunk ki a képernyőre <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 0.814em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.595em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.885em, 1000.58em, 2.663em, -1000em); top: -2.489em; left: 0em;"><span class="mrow" id="MathJax-Span-8"><span class="mi" id="MathJax-Span-9" style="font-family: MathJax_Math; font-style: italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.489em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.086em; border-left: 0px solid; width: 0px; height: 0.741em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">n</script>-szer:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">kiírN</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">≤</span> <span class="mi">0</span>
-        <span class="k">return</span>
-    <span class="k">end</span>
-    <span class="n">println</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-    <span class="n">kiírN</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">end</span>
-<span class="n">kiírN</span><span class="p">(</span><span class="s">"hali "</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hali 
-hali 
-hali 
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Végtelen-rekurzió">Végtelen rekurzió<a class="anchor-link" href="#Végtelen-rekurzió">¶</a></h2><p>A rekurzív függvények tervezésénél nagyon fontos odafigyelni a rekurzió elzárására, azaz <br>
-olyan feltételeket beépíteni a függvénybe, melyek minden inputra garantálják hogy nem kerülünk <br>
-végtelen rekurzióba, ezt a feltételt bázis feltételnek nevezzük (ennek teljesülésekor <br>
-megszakad a rekurzív hívás-sorozat).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">∞Rekurzió</span><span class="p">()</span>
-    <span class="n">∞Rekurzió</span><span class="p">()</span>
-<span class="k">end</span>
-<span class="n">∞Rekurzió</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>StackOverflowError:
-
-Stacktrace:
- [1] ∞Rekurzió() at ./In[34]:2 (repeats 80000 times)</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Szerencsére mindig van hardveres korlátja is a végtelen rekurziónak,<br> 
-de gyakran nem könnyű lenyomozni hol kerül a programunk végtelen rekurzióba.<br>
-A fenti példa arról ad tájékoztatást, hogy <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;80000&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-10" style="width: 3.249em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.435em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.661em, 1002.4em, 2.674em, -1000em); top: -2.489em; left: 0em;"><span class="mrow" id="MathJax-Span-11"><span class="mn" id="MathJax-Span-12" style="font-family: MathJax_Main;">80000</span></span><span style="display: inline-block; width: 0px; height: 2.489em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.1em; border-left: 0px solid; width: 0px; height: 1.051em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>80000</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">80000</script> mélységű rekurzió után a futás megszakadt.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Adat-bevitel">Adat-bevitel<a class="anchor-link" href="#Adat-bevitel">¶</a></h2><p>Julia-ban a <code>readline</code> függvénnyel olvashatunk a billenytyűzetről, a sztenderd inputról karaktereket.</p>
-
-</div>
-</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>része (generic function with 1 method)</pre>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">s</span><span class="o">=</span><span class="n">readline</span><span class="p">()</span>
-<span class="n">println</span><span class="p">(</span><span class="s">"ezt adtad: "</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
-</pre></div>
 
-    </div>
 </div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Az olvasást összekapcsolhatjuk kiírással is:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">println</span><span class="p">(</span><span class="s">"hány éves vagy?"</span><span class="p">);</span> <span class="n">readline</span><span class="p">())</span>
-<span class="n">println</span><span class="p">(</span> <span class="k">if</span> <span class="n">mod</span><span class="p">(</span><span class="n">parse</span><span class="p">(</span><span class="kt">Int</span><span class="p">,</span><span class="n">s</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span> <span class="s">"páros sok éves vagy"</span> <span class="k">else</span> <span class="s">"páratlan sok éves vagy"</span> <span class="k">end</span> <span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A pontosvesszővel elválasztott kifejezések kiértékelődnek. A zárójel egy kifejezéssé alakítja őket.<br>
-A végső kifejezés értéke az utoljára kiértékelt kifejezés, a <code>readline()</code>. A beolvasott <br>
-sztringet a <code>parse</code> segítségével alakíthatjuk egésszé.</p>
 
-</div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Feladatok">Feladatok<a class="anchor-link" href="#Feladatok">¶</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Próbáljuk-megfejteni-az-alábbi-függvény-működését:">1. Próbáljuk megfejteni az alábbi függvény működését:<a class="anchor-link" href="#1.-Próbáljuk-megfejteni-az-alábbi-függvény-működését:">¶</a></h3><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">recurse</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span>
-        <span class="n">println</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-    <span class="k">else</span>
-        <span class="n">recurse</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="n">s</span><span class="p">)</span>
-    <span class="k">end</span>
-<span class="k">end</span>
-</pre></div>
-<h3 id="2.-Írjunk-egy">2. Írjunk egy<a class="anchor-link" href="#2.-Írjunk-egy">¶</a></h3><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">checkFermat</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
-<span class="k">end</span>
-</pre></div>
-<p>alakú függvényt, mely ellenőrzi hogy a híres <a href="https://hu.wikipedia.org/wiki/Nagy_Fermat-t%C3%A9tel">Fermat</a>-féle <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-13" style="width: 7.146em; display: inline-block;"><span style="display: inline-block; position: relative; width: 5.411em; height: 0px; font-size: 132%;"><span style="position: absolute; clip: rect(1.633em, 1005.41em, 2.734em, -1000em); top: -2.489em; left: 0em;"><span class="mrow" id="MathJax-Span-14"><span class="msubsup" id="MathJax-Span-15"><span style="display: inline-block; position: relative; width: 1.028em; height: 0px;"><span style="position: absolute; clip: rect(3.401em, 1000.51em, 4.177em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-16" style="font-family: MathJax_Math; font-style: italic;">a</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.529em;"><span class="mi" id="MathJax-Span-17" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">n</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mo" id="MathJax-Span-18" style="font-family: MathJax_Main; padding-left: 0.222em;">+</span><span class="msubsup" id="MathJax-Span-19" style="padding-left: 0.222em;"><span style="display: inline-block; position: relative; width: 0.928em; height: 0px;"><span style="position: absolute; clip: rect(3.148em, 1000.42em, 4.178em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-20" style="font-family: MathJax_Math; font-style: italic;">b</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.429em;"><span class="mi" id="MathJax-Span-21" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">n</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span><span class="mo" id="MathJax-Span-22" style="font-family: MathJax_Main; padding-left: 0.278em;">=</span><span class="msubsup" id="MathJax-Span-23" style="padding-left: 0.278em;"><span style="display: inline-block; position: relative; width: 0.932em; height: 0px;"><span style="position: absolute; clip: rect(3.4em, 1000.43em, 4.178em, -1000em); top: -4.004em; left: 0em;"><span class="mi" id="MathJax-Span-24" style="font-family: MathJax_Math; font-style: italic;">c</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span><span style="position: absolute; top: -4.367em; left: 0.433em;"><span class="mi" id="MathJax-Span-25" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">n</span><span style="display: inline-block; width: 0px; height: 4.004em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.489em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.18em; border-left: 0px solid; width: 0px; height: 1.167em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mi>n</mi></msup><mo>+</mo><msup><mi>b</mi><mi>n</mi></msup><mo>=</mo><msup><mi>c</mi><mi>n</mi></msup></math></span></span><script type="math/tex" id="MathJax-Element-5">a^n+b^n=c^n</script> egyenlőség teljesül-e vagy sem. (<code>true,false</code>)</p>
-<h3 id="3.-Írjunk-egy">3. Írjunk egy<a class="anchor-link" href="#3.-Írjunk-egy">¶</a></h3><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">checkTriangle</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-<span class="k">end</span>
-</pre></div>
-<p>alakú függvényt, mely ellenőrzi hogy az adott számokból szerkeszthető-e háromszög. (<code>true,false</code>)</p>
 
-</div>
-</div>
 </div>
     </div>
   </div>
-
+</body>
 
  
 
 
-
-<div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px none; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px none; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-size-adjust: none; font-family: MathJax_Size4, sans-serif;"></div></div></body></html>
+</html>
