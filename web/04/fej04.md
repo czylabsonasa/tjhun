@@ -1,5 +1,5 @@
 
-# Függvények - esettanulmány
+# Játék függvényekkel
 
 Ebben a részben függvényeket írunk. Megpróbáljuk úgy tenni ezt, hogy minél több kódot újrahasználjunk, de közben ne vesszünk a használhatóságból.<br>
 A teknőc-grafikát fogjuk használni, ez nem része *Julia*-nak, de a megfelelő<br> 
