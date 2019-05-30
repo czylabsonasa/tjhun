@@ -1,7 +1,4 @@
-# Nulladik évfolyam
-Matematika és programozás [Julia](julialang.org)-ban.
-
-## [ThinkJulia](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html) magyarul
+# [ThinkJulia](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html) magyarul
 
 1. ## [Probléma-megoldás és programozás](web/01/fej01.md)
 1. ## [Változók, kifejezések, utasítások](web/02/fej02.md)
