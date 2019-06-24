@@ -3,5 +3,5 @@
 git add --all
 git commit -m "progress"
 git push origin master
-git push gitlab master
+# git push gitlab master
 
